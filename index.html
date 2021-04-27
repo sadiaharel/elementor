@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemntor Exam</title>
+    <link rel="manifest" href="/manifest.webmanifest">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="src/Box.js"></script>
+    <script src="src/main.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="src/assets/style/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>bird</h1>
+            <img src="src/assets/images/bird.jpg"/>
+            <button class="btn" onclick=" onBoxClick(1)">הצג</button>
+        </div>
+        <div class="box">
+            <h1>rabbit</h1>
+            <img src="src/assets/images/rabbit.jpg"/>
+            <button class="btn" onclick="onBoxClick(2)">הצג</button>
+        </div>
+        <div class="box">
+            <h1>dolphin</h1>
+            <img src="src/assets/images/dolphin.jpg"/>
+            <button class="btn" onclick="onBoxClick(3)">הצג</button>
+        </div>
+    </div>
+    <div class="popup-background hide">
+        <div class="popup">
+            <button class="close">x</button>
+            <h1 id="popup-title"></h1>
+
+        </div>
+    </div>
+</body>
+</html>
